@@ -1,0 +1,149 @@
+
+.question-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 48px;
+  margin: 0 auto; 
+}
+
+.back-button {
+  background: transparent !important;
+  border: none;
+  color: #667085;
+  font-size: 16px;
+  font-family: 'Proxima Nova', sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.next-button {
+  background-color: #c3edff;
+  color: #1C2635;
+  border: none;
+  border-radius: 8px;
+  padding: 0 24px;
+  width: 198px;
+  height: 49px;
+  font-size: 16px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.next-button:hover {
+  background-color: #b5e5f9;
+}
+
+.next-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.question-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.question-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+
+.question-content {
+  width: 786px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.question-title {
+  font-family: 'Grange', serif;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: #1C2635;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.question-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.option-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #c3edff;
+  border-radius: 8px;
+  background: transparent;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #1C2635;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #e5f6ff;
+}
+
+.option-button.selected {
+  background-color: #c3edff;
+  color: #1C2635;
+}
+
+.question-progress {
+  width: 101px;
+  height: 101px;
+  position: relative;
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #EEF7FB;
+  stroke-width: 8;
+}
+
+.ring {
+  fill: none;
+  stroke: #AADDf3;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: calc(2 * 3.1416 * 45);
+  stroke-dashoffset: calc(2 * 3.1416 * 45);
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.ring-text {
+  font-size: 16px;
+  fill: #1C2635;
+  font-family: 'Proxima Nova', sans-serif;
+  dominant-baseline: middle;
+  alignment-baseline: middle;
+}
