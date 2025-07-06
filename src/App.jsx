@@ -11,14 +11,12 @@ export default function App() {
   const [answers, setAnswers] = useState({});
 
   useEffect(() => {
-    setQuestions(importedQuestions); // важно: импортировать после монтирования
+    setQuestions(importedQuestions);
   }, []);
 
   function updateAnswer(questionId, answer) {
     setAnswers(prev => ({ ...prev, [questionId]: answer }));
   }
-
-    console.log("App questions:", questions);
 
   if (questions.length === 0) {
     return <div style={{ padding: '2rem' }}>Loading...</div>;
